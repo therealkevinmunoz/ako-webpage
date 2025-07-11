@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKO - Accessibility Experts</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo"></div>
+        <h1 aria-label="AKO - Accessibility Transformation Experts">AKO</h1>
+        <p>We transform businesses into fully accessible, inclusive digital spaces.</p>
+      </header>
+
+      <section aria-labelledby="services-heading">
+        <h2 id="services-heading">Our Services</h2>
+        <ul role="list" class="services">
+          <li>
+            <div id="icon1" class="icon"></div>
+            <h3>ADA Compliance Audits</h3>
+            <p>We audit websites to meet and exceed ADA accessibility standards.</p>
+          </li>
+          <li>
+            <div id="icon2" class="icon"></div>
+            <h3>AIRAA Alignment</h3>
+            <p>We help organizations align their digital presence with AIRAA guidelines for responsible, inclusive accessibility.</p>
+          </li>
+          <li>
+            <div id="icon3" class="icon"></div>
+            <h3>Remediation & Certification</h3>
+            <p>Our team remediates accessibility barriers and certifies your platform's compliance.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="pricing-heading">
+        <h2 id="pricing-heading">Pricing</h2>
+        <div class="card">
+          <div class="card-content">
+            <p>
+              Our pricing is tailored to the specific needs of your organization.
+              Because no two websites are the same, our audits, remediation, and
+              certification services are all priced on a case-by-case basis.
+            </p>
+            <p>Contact us to receive a custom quote based on your accessibility goals.</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+        <form
+          action="https://hook.us1.make.com/YOUR-MAKE-WEBHOOK-ID"
+          method="POST"
+          aria-label="Contact Form"
+        >
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+
+          <button class="dm-sans-medium" type="submit" aria-label="Submit Contact Form">Send Message</button>
+        </form>
+      </section>
+
+      <footer>
+        <p>&copy; <span id="year"></span> AKO. All rights reserved.</p>
+      </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
